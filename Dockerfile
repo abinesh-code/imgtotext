@@ -12,7 +12,7 @@ RUN addgroup -S myappgroup && adduser -S myappuser -G myappgroup
 RUN chown myappuser:myappgroup /app/app.jar
 
 # Install Tesseract OCR and all language data
-RUN apk --no-cache add tesseract-ocr tesseract-ocr-all
+RUN apk --no-cache add tesseract-ocr
 
 USER myappuser
 EXPOSE 8080
